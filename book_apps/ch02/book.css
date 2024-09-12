@@ -20,3 +20,11 @@ p {
 	margin: 0;
 	padding-bottom: .5em;
 }
+.nav_link {
+	color: red;
+	font-weight: bold;
+}
+.btn {
+	color: green;
+	font-weight: bold;
+}

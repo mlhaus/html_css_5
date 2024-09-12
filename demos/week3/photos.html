@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #gallery {
+            /* See Chapter 9 for more info on Flexbox */
+            display: flex; /* Allows better layout control of child elements */
+            flex-direction: row; /* row places child elements horizontally, column places child elements vertically */
+            align-items: center; /* flex-start aligns top edges, center aligns is middle, flex-end aligns bottom edges, stretch will make all heights the same */
+            
+            clear: both; /* The clear property is needed whenever an element above it is floated*/
+        }
+        img {
+            /* This makes all images have the same width */
+            width: 300px;
+            max-width: 100%;
+        }
+        #directory article {
+            width: 250px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="directory">
+        <article>
+            <img src="A-Cat-600px.jpg" alt="A friendly cat">
+            <h2>Sally Smith</h2>
+            <p>Human Resource Specialist</p>
+            <a href="mailto:sally.smith@kirkwood.edu">sally.smith@kirkwood.edu</a>
+        </article>
+    </div>
+
+    <div id="float-demo">
+<!--        Use the style attribute on any element whenever you need to apply one or two styles -->
+<!--        float: left; will place the image to the left of the paragraph text -->
+<!--        Whenever you float left, include a margin-right property to add separation -->
+        <img src="cat-and-keyboard.gif" alt="A friendly cat" style="float: left; margin-right: 20px;">
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus dapibus dis dictum rutrum quam egestas mauris sapien. Tellus aptent convallis mollis, varius convallis convallis praesent dolor. Tristique in justo metus, quisque consectetur habitasse? Porttitor class rhoncus penatibus varius condimentum ad sapien? Purus augue fusce egestas curabitur, elit est volutpat.</p>
+        <p>Leo turpis convallis laoreet dui; imperdiet massa. Taciti habitant ad auctor mauris urna. Neque egestas sem congue fermentum magna arcu gravida. Ornare adipiscing leo maecenas aenean taciti ullamcorper ultricies. Efficitur vulputate nisl tempor ex, sem feugiat. Hendrerit vitae justo fermentum himenaeos luctus sollicitudin hendrerit elit. Proin tortor vel eros augue; porttitor leo erat nulla?</p>
+    </div>
+
+<!-- This div tag creates a parent container with a unique name that can be used for styling -->
+    <div id="gallery">
+<!--        img tags are inline elements, meaning they are placed side-by-side by default -->
+<!--        img tags require a src attribute and alt text attribute -->
+<!--        width and height attributes are optional, never use both at the same time, use width only -->
+<!--        it is often better to style image widths using CSS instead -->
+        <img src="A-Cat-600px.jpg" alt="A friendly cat">
+        <img src="cat.png" alt="A friendly cat">
+        <img src="hey-you-guys.webp" alt="A friendly cat">
+    </div>
+
+
+</body>
+</html>
