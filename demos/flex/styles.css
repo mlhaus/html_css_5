@@ -71,12 +71,12 @@ table {
     }
 }
 
-header{
-    padding: 20px;
+.container {
+    display: flex;
 }
 
 header .container {
-    display: flex;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -103,10 +103,6 @@ header nav a {
 header nav a:hover {
     background-color: white;
     transition:background-color .5s;
-    -o-transition:background-color .5s;
-    -ms-transition:background-color .5s;
-    -moz-transition:background-color .5s;
-    -webkit-transition:background-color .5s;
 }
 
 header nav a.current-page {
@@ -114,30 +110,71 @@ header nav a.current-page {
     border-bottom: 3px solid black;
 }
 
+#banner {
+    /* These styles apply to the background image */
+    height: 500px;
+    background-image: url("images/downtown-tractor.webp");
+    background-position: center 88%;
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.35); /* change 0,0,0 to 255,255,255 for a white overlay */
 
-header, main, footer {
-    /*min-height: 100px;*/
-}
-.container {
+    /* These styles apply to the text */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+#banner h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+#banner p {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+#banner a.btn {
+    background-color: yellow;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#banner a.btn:hover {
+    background-color: limegreen;
+}
+
+
+main, footer {
+    min-height: 100px;
+}
+
 aside, #resume {
-    /*min-height: 200px;*/
+    min-height: 200px;
 }
 header {
     background-color: lightblue;
 }
 main {
-    /*background-color: yellow;*/
+    background-color: yellow;
 }
 footer {
-    /*background-color: blue;*/
+    background-color: blue;
 }
 aside {
-    /*background-color: green;*/
+    background-color: green;
     width: 25%;
 }
 #resume {
-    /*background-color: purple;*/
+    background-color: purple;
     width: 75%;
 }
