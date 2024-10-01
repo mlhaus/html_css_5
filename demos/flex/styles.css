@@ -1,29 +1,143 @@
-body {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   Lines 7-49
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Lines 52-72: https://stackoverflow.com/a/36230069 */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+header{
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    /*gap: 25px; !* Adds space between navigation text *!*/
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header nav a {
+    text-decoration: none; /* Removes underline from hyperlinked text */
+    color: black; /* All nav hyperlink text color */
+    padding: 10px 20px; /* 10px above and below text, 20px to the left and right of text */
+}
+
+header nav a:hover {
+    background-color: white;
+    transition:background-color .5s;
+    -o-transition:background-color .5s;
+    -ms-transition:background-color .5s;
+    -moz-transition:background-color .5s;
+    -webkit-transition:background-color .5s;
+}
+
+header nav a.current-page {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+
 header, main, footer {
-    min-height: 100px;
+    /*min-height: 100px;*/
 }
 .container {
     display: flex;
 }
 aside, #resume {
-    min-height: 200px;
+    /*min-height: 200px;*/
 }
 header {
-    background-color: red;
+    background-color: lightblue;
 }
 main {
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 footer {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 aside {
-    background-color: green;
+    /*background-color: green;*/
     width: 25%;
 }
 #resume {
-    background-color: purple;
+    /*background-color: purple;*/
     width: 75%;
 }

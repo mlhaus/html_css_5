@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-      img {
-        width: 200px;
-      }
-      .container {
+      #gallery {
         height: 100vh;
         display: flex;
-        justify-content: space-evenly ; /*center, space-evenly, space-around, space-between */
-        align-items: center;
+          /*flex-direction: row;*/
+          /*flex-wrap: wrap;*/
+          flex-flow: row wrap; /* combines direction and wrap */
+        justify-content: center; /*center, space-evenly, space-around, space-between */
+        align-items: center; /* flex-start, flex-end, center, stretch */
+          align-content: center; /* flex-start, flex-end, center, space-around, space-between, stretch */
+          gap: 20px 20px;
+      }
+      #gallery img {
+          width: 150px;
       }
     </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://picsum.photos/300/300" alt="">
-    <img src="https://picsum.photos/300/300" alt="">
-    <img src="https://picsum.photos/300/300" alt="">
+  <div id="gallery">
+    <img src="https://picsum.photos/600/600" alt="">
+    <img src="https://picsum.photos/601/600" alt="">
+    <img src="https://picsum.photos/602/600" alt="">
+      <img src="https://picsum.photos/600/600" alt="">
+      <img src="https://picsum.photos/601/600" alt="">
+      <img src="https://picsum.photos/602/600" alt="">
+      <img src="https://picsum.photos/600/600" alt="">
+      <img src="https://picsum.photos/601/600" alt="">
+      <img src="https://picsum.photos/602/600" alt="">
+      <img src="https://picsum.photos/600/600" alt="">
+      <img src="https://picsum.photos/601/600" alt="">
+      <img src="https://picsum.photos/602/600" alt="">
   </div>
 </body>
 </html>

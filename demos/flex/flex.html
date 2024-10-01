@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Directory</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex; /* Make the white box centered vertically and horizontally */
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: dodgerblue;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #directory, #gallery {
+            width: 400px;
+            /*min-height: 100px;*/
+            background-color: white;
+            /*padding: 20px;*/
+            /*padding-right: 40px;*/
+            display: flex; /* Make each person stacked vertically */
+            flex-direction: column;
+            /*gap: 20px;*/
+        }
+        .person {
+            display: flex; /* Make the image sit to the left of the personal info */
+            gap: 20px; /* space between the image and personal info */
+            align-items: center;
+            margin: 20px;
+        }
+        /* https://stackoverflow.com/questions/19329459/how-do-i-have-a-border-bottom-on-all-except-the-last-item */
+        .person:not(:last-child) {
+            border-bottom: 1px solid darkgrey;
+            padding-bottom: 20px;
+            margin-bottom: 0;
+        }
+        .person img {
+            border-radius: 50%; /* This makes an image circular only if the width and height are the same */
+            width: 75px;
+            height: 75px;
+        }
+        .person .name {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .person .email a {
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="directory">
+            <div class="person">
+                <img src="https://picsum.photos/100/100" alt="">
+                <div class="personal-info">
+                    <p class="name">Marc Hauschildt</p>
+                    <p class="email"><a href="mailto:marc.hauschildt@kirkwood.edu">Marc.Hauschildt@kirkwood.edu</a></p>
+                </div>
+            </div>
+
+            <div class="person">
+                <img src="https://picsum.photos/101/100" alt="">
+                <div class="personal-info">
+                    <p class="name">Adam Murphy</p>
+                    <p class="email"><a href="mailto:adam.murphy@kirkwood.edu">Adam Murphy@kirkwood.edu</a></p>
+                </div>
+            </div>
+
+            <div class="person">
+                <img src="https://picsum.photos/100/101" alt="">
+                <div class="personal-info">
+                    <p class="name">Amy Smith</p>
+                    <p class="email"><a href="mailto:amy.smith@kirkwood.edu">Amy.Smith@kirkwood.edu</a></p>
+                </div>
+            </div>
+
+            <div class="person">
+                <img src="https://picsum.photos/101/101" alt="">
+                <div class="personal-info">
+                    <p class="name">Sarah Johnson</p>
+                    <p class="email"><a href="mailto:sarah.johnson@kirkwood.edu">Sarah.Johnson@kirkwood.edu</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
