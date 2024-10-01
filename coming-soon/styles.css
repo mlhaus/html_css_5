@@ -1,0 +1,10 @@
+
+#social-icons i {
+    color: CornflowerBlue;
+    border: solid darkgray;
+    padding: 12px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
