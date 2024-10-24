@@ -110,6 +110,39 @@ header nav a.current-page {
     border-bottom: 3px solid black;
 }
 
+/* Start navigation drop-down */
+.drop-down {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: white;
+}
+.drop-down a {
+    /* a tags are inline elements. Inline elements cannot have top and bottom padding applied. */
+    /* Inline-block allows padding on all 4 sides. Block also makes it full width */
+    display: block;
+    padding: 10px 20px;
+}
+
+.drop-down a:hover {
+    background-color: black;
+    color: white;
+}
+
+#main-nav li:hover .drop-down {
+    display: block;
+}
+
+.drop-down-right-align1 {
+    margin-left: -176px;
+}
+
+.drop-down-right-align2 {
+    margin-left: -178px;
+}
+
+/* Stop navigation drop-down */
+
 #banner {
     /* These styles apply to the background image */
     height: 500px;
