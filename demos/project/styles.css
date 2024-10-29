@@ -143,6 +143,46 @@ header nav a.current-page {
 
 /* Stop navigation drop-down */
 
+/* Start navigation mega-menu */
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+li:hover > .mega-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mega-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.mega-menu-sub  {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-menu a {
+    display: block;
+}
+
+.mega-menu > li > a {
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+/* End navigation mega-menu */
+
 #banner {
     /* These styles apply to the background image */
     height: 500px;
@@ -226,8 +266,17 @@ header {
     background-color: lightblue;
 }
 main {
-    min-height: 100px;
+    min-height: 400px;
     /*background-color: yellow;*/
+}
+main > .container {
+    padding: 20px 0;
+}
+
+main > .container > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 aside {
