@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    body {
+        background-color: lightblue;
+    }
+    .container {
+        /* These styles place the card in the middle of the page */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        background-color: white;
+        width: 500px;
+        height: 200px;
+        display: flex; /* Places left and right columns side-by-side */
+        flex-direction: row; /* this is the default setting */
+    }
+    .left-col {
+        width: 40%;
+        background-color: #44aaee;
+    }
+    .right-col {
+        width: 60%;
+        background-color: red;
+    }
+    /* These styles apply to small browsers */
+    @media only screen and (max-width: 800px) {
+        body {
+            /*background-color: lightgreen;*/
+        }
+        .card {
+            flex-direction: column; /* This stacks the columns vertically */
+            width: 200px;
+            height: 500px;
+        }
+        .left-col {
+            width: 100%;
+            height: 40%;
+        }
+        .right-col {
+            width: 100%;
+            height: 60%;
+        }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left-col"></div>
+            <div class="right-col"></div>
+        </div>
+    </div>
+</body>
+</html>

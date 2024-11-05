@@ -48,32 +48,7 @@ table {
     border-spacing: 0;
 }
 
-/* Lines 52-72: https://stackoverflow.com/a/36230069 */
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
 
-.container {
-    display: flex;
-}
 
 header .container {
     padding: 20px;
@@ -87,8 +62,16 @@ header h1 {
     font-family: Arial, sans-serif;
 }
 
+#hamburger-menu {
+    display: block;
+}
+
+#hamburger-menu:hover {
+    color: #666666;
+}
+
 header nav ul {
-    display: flex;
+    display: none;
     /*gap: 25px; !* Adds space between navigation text *!*/
     font-size: 20px;
     font-family: Arial, sans-serif;
@@ -286,4 +269,38 @@ aside {
 #resume {
     /*background-color: purple;*/
     width: 75%;
+}
+
+/* Source https://stackoverflow.com/a/36230069 */
+/* mobile view */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+/* tablet view */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Small laptop view */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    header nav ul {
+        display: flex;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+}
+/* Large laptop/desktop view */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }

@@ -9,6 +9,12 @@ $(document).ready(function () {
                 $(this).addClass('current-page');
             }
         });
+
+        $("#hamburger-menu").click(function(event) {
+            $("#hamburger-menu i").toggleClass("fa-bars");
+            $("#hamburger-menu i").toggleClass("fa-xmark");
+        });
     });
+
     $("body > footer").load("footer.html");
 });
