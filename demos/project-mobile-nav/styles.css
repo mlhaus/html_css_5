@@ -47,9 +47,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/* End reset styles */
 
-/* Begin banner styles */
 #banner {
     /* These styles apply to the background image */
     height: 500px;
@@ -94,9 +92,7 @@ table {
 #banner a.btn:hover {
     background-color: limegreen;
 }
-/* End Banner styles */
 
-/* Begin footer styles */
 footer {
     background-color: darkslategrey;
     color: whitesmoke;
@@ -126,9 +122,14 @@ footer a:hover {
 
 #copyright a {
 }
-/* End footer styles */
 
-/* Begin main styles */
+
+aside, #resume {
+    min-height: 200px;
+}
+header {
+    background-color: lightblue;
+}
 main {
     min-height: 400px;
     /*background-color: yellow;*/
@@ -142,7 +143,6 @@ main > .container > h2 {
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
-/* End main styles */
 
 /* Source https://stackoverflow.com/a/36230069 */
 /* mobile view */
@@ -172,7 +172,8 @@ main > .container > h2 {
     }
 }
 
-/* New navigation begin */
+
+/* New navigation */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -313,6 +314,7 @@ header nav .wrapper{
     top: 10px;
 }
 
+/* Start mobile navigation style */
 @media screen and (max-width: 970px) {
     .wrapper .btn{
         display: block;
@@ -440,7 +442,7 @@ header nav .wrapper{
         margin: 0;
     }
 }
+/* End mobile navigation style */
 nav input{
     display: none;
 }
-/* Navigation ends */
