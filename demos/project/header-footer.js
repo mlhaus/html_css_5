@@ -11,5 +11,7 @@ $(document).ready(function () {
         });
     });
 
-    $("body > footer").load("footer.html");
+    $("body > footer").load("footer.html", function() {
+        $("#copyright-year").html(new Date().getFullYear());
+    });
 });

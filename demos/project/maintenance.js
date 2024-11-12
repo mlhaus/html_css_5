@@ -1,7 +1,7 @@
 $(document).ready(function(){
-   var maintenance = true;
+   var maintenance = false;
    if(maintenance) {
        $("body").empty();
-       $("body").load("coming-soon.html")
+       $("body").load("coming-soon.html");
    }
 });
