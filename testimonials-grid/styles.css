@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    max-width: 100%;
+}
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --lightgray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+}
+.container {
+    margin:0 auto; /* centers the container horizontally */
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, 1fr); /* 4 rows */
+    grid-gap: 20px;
+}
+.testimonial {
+    border-radius: 20px;
+    padding: 20px;
+}
+.testimonial h4 {
+    font-size: 18px;
+}
+.person {
+    display: flex; /* Places the person's name next to their image */
+    align-items: center; /* Align the image and text vertically */
+    gap: 10px;
+}
+.person img {
+    border-radius: 50%; /* Circle image */
+}
+.person h5, .person h6 {
+    margin: 2px 0;
+}
+#testimonial-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: var(--violet);
+    color: var(--white);
+}
+#testimonial-2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: var(--dark-grayish-blue);
+    color: var(--white);
+}
+#testimonial-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--white);
+}
+#testimonial-4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--white);
+}
+#testimonial-5 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: var(--white);
+}
