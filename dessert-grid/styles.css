@@ -8,8 +8,14 @@
     flex-direction: column;
 }
 
-.dessert-container > main {
+.dessert-grid{
     /* Write grid code */
+    width: 900px; /* Sets the maximum width */
+    height: 1400px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .dessert {
@@ -19,8 +25,9 @@
     align-items: center;
 }
 
-.dessert .info {
+.dessert-info {
     width: 100%;
+    margin-top: -15px; /* This makes the Add to Cart button overlap the picture */
 }
 
 .attribution { font-size: 11px; text-align: center; }
