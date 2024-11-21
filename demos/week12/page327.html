@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 Row x 3 Column Grid</title>
+    <style>
+        .container {
+            display: flex;
+            /*height: 100vh;*/
+            justify-content: center;
+            /*align-items: center;*/
+        }
+        main > div {
+            background-color: #C8DFEE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            display: grid; /* This must be applied to the parent element */
+            grid-template-rows: 100px 100px; /* Two rows, each 100px tall */
+            grid-template-columns: 150px 150px 150px; /* Three columns, each 150px wide */
+            /*grid-template: 100px 100px / 150px 150px 150px;*/ /* This is the shorthand way of declaring rows and columns together */
+            grid-gap: 20px; /* Add 20px between rows and columns */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <main>
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+    </main>
+</div>
+</body>
+</html>

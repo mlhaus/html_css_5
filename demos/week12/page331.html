@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexible Grid</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        main > div {
+            background-color: #C8DFEE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            width: 800px; /* Sets the maximum width */
+            display: grid;
+            grid-template-rows: repeat(12, 100px);
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <main>
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+        <div>Div 7</div>
+        <div>Div 8</div>
+        <div>Div 9</div>
+        <div>Div 10</div>
+        <div>Div 11</div>
+        <div>Div 12</div>
+    </main>
+</div>
+</body>
+</html>
