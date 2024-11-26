@@ -17,7 +17,7 @@ body {
 }
 .container {
     margin:0 auto; /* centers the container horizontally */
-    width: 1440px;
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     grid-template-rows: repeat(2, 1fr); /* 4 rows */
@@ -26,6 +26,7 @@ body {
 .testimonial {
     border-radius: 20px;
     padding: 20px;
+    border: 10px solid var(--lightgray);
 }
 .testimonial h4 {
     font-size: 18px;
@@ -66,6 +67,42 @@ body {
 }
 #testimonial-5 {
     grid-column: 4/5;
-    grid-row: 1/3;
+    grid-row: 1/-1;
     background-color: var(--white);
 }
+
+
+@media only screen and (max-width: 870px) {
+    .testimonial {
+        grid-column: 1/-1 !important;
+    }
+    #testimonial-1 {
+        grid-row: 1/2;
+    }
+    #testimonial-2 {
+        grid-row: 2/3;
+    }
+    #testimonial-3 {
+        grid-row: 3/4;
+    }
+    #testimonial-4 {
+        grid-row: 4/5;
+    }
+    #testimonial-5 {
+        grid-row: 5/6;
+    }
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
