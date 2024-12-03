@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        table {
+            border-collapse: collapse;
+            font-style: italic;
+            width: 900px;
+        }
+        th, td {
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: royalblue;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ddd;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        tbody tr:hover {
+            background-color: lightskyblue;
+        }
+        tbody td:nth-child(1), tbody td:nth-child(2), tfoot td:nth-child(1) {
+            font-weight: bold;
+        }
+        tbody td:nth-child(5), tbody td:nth-child(6), tfoot td:nth-child(2) {
+            text-align: right;
+        }
+        thead td:nth-child(1) {
+            width: 10%;
+        }
+        thead td:nth-child(2){
+            width: 38%;
+        }
+        thead td:nth-child(3) {
+            width: 4%;
+        }
+        thead td:nth-child(4){
+            width: 4%;
+        }
+        thead td:nth-child(5) {
+            width: 4%;
+        }
+        thead td:nth-child(6) {
+            width: 15%;
+        }
+        thead td:nth-child(7) {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Pos.</th>
+                <th>Cl.</th>
+                <th>Ht.</th>
+                <th>Avg Pts.</th>
+                <th>Hometown/High School</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Kora Alesch</td>
+                <td>G</td>
+                <td>So</td>
+                <td>5'6</td>
+                <td>4.5</td>
+                <td>Le Mars, IA / MMCRU</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kennedy Blakely</td>
+                <td>G</td>
+                <td>Fr</td>
+                <td>5'10</td>
+                <td>10.2</td>
+                <td>Hammond, IN / Hammond Central</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Malayna Dille-Starks</td>
+                <td>G</td>
+                <td>Fr</td>
+                <td>5'8</td>
+                <td>9.1</td>
+                <td>Champlin, MN / Robbinsdale Armstrong</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Jariah Harris</td>
+                <td>F</td>
+                <td>So</td>
+                <td>5'11</td>
+                <td>12.2</td>
+                <td>Cedar Rapids, IA / Cedar Rapids Jefferson</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ellah Kissell</td>
+                <td>G</td>
+                <td>So</td>
+                <td>5'10</td>
+                <td>7.8</td>
+                <td>Wayland, IA / WACO</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="5">Team Average Points Per Game</td>
+            <td>43.8</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
