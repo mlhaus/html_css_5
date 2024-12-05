@@ -21,17 +21,20 @@ $(document).ready(function () {
         var formData = {
             'user_name': $('input[name=user_name]').val(),
             'user_email': $('input[name=user_email]').val(),
-            'subject': $('input[name=subject]').val(),
-            'msg': $('textarea[name=msg]').val(),
+            'user_subject': $('input[name=user_subject]').val(),
+            'user_msg': $('textarea[name=user_msg]').val(),
         };
         // console.log(formData);
 
         $.ajax({
-            url: "https://march115.sg-host.com/php/sendmail.php",
+            url: "https://amusementman.com/phpmailer/",
             type: "post",
             data: formData,
             success: function(d) {
-                alert(d);
+                var json = JSON.parse(d);
+                var type = json.type;
+                var text = json.text;
+                alert(text);
             }
         });
     });
