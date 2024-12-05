@@ -14,4 +14,25 @@ $(document).ready(function () {
     $("body > footer").load("footer.html", function() {
         $("#copyright-year").html(new Date().getFullYear());
     });
+
+    $("#contact").on("submit", function(event) {
+        event.preventDefault();
+
+        var formData = {
+            'user_name': $('input[name=user_name]').val(),
+            'user_email': $('input[name=user_email]').val(),
+            'subject': $('input[name=subject]').val(),
+            'msg': $('textarea[name=msg]').val(),
+        };
+        // console.log(formData);
+
+        $.ajax({
+            url: "https://march115.sg-host.com/php/sendmail.php",
+            type: "post",
+            data: formData,
+            success: function(d) {
+                alert(d);
+            }
+        });
+    });
 });

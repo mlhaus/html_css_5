@@ -152,6 +152,7 @@ main > .container > h2 {
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    flex-direction: column;
 }
 /* tablet view */
 @media (min-width: 768px) {
@@ -180,11 +181,11 @@ main > .container > h2 {
 }
 #banner, header ~ main {
     /* With fixed header, move down header height */
-    position: relative;
-    top: 70px;
+    /*position: relative;*/
+    /*top: 70px;*/
 }
 header nav{
-    position: fixed;
+    /*position: fixed;*/
     z-index: 99;
     width: 100%;
     background: #242526;
